@@ -1,13 +1,12 @@
 :root {
-	/* paleta minimalista */
-	--bg: #eef6ff;      /* fundo suave */
-	--card: #ffffff;    /* cards / containers */
-	--accent: #3b82f6;  /* acento / botões */
-	--muted: #6b7280;   /* texto secundário */
-	--text: #0f172a;    /* texto principal */
+	
+	--bg: #eef6ff;      
+	--card: #ffffff;   
+	--muted: #6b7280;   
+	--text: #0f172a;   
 }
 
-/* Aplicar apenas às páginas index e lista */
+
 .page-index,
 .page-lista {
 	background-color: var(--bg);
@@ -15,36 +14,36 @@
 	min-height: 100vh;
 }
 
-/* Navbar: aparência limpa, sem o fundo escuro padrão do Bootstrap */
+
 .page-index .navbar,
 .page-lista .navbar {
 	background: rgb(245, 225, 136) !important;
 	border-bottom: 1px solid rgba(15,23,42,0.06);
 }
 
-/* Centraliza o nome do site na index (usando a marcação alterada em index.php) */
+
 .page-index .navbar-brand {
 	position: absolute;
 	left: 50%;
 	transform: translateX(-50%);
 	font-weight: 700;
-	color: #000 !important; /* nome em preto */
+	color: #000 !important; 
 	letter-spacing: 0.2px;
 }
 
-/* garantir o nome em preto também nas páginas lista/cadrastar (body .page-lista usado nelas) */
+
 .page-lista .navbar-brand {
 	color: #000 !important;
 	font-weight: 700;
 }
 
-/* Ações (botões) alinhadas à direita */
+
 .page-index .nav-actions {
 	margin-left: auto;
 	align-items: center;
 }
 
-/* Estilo minimalista para botões na index */
+
 .page-index .btn {
 	border-radius: 6px;
 	padding: 0.45rem 0.8rem;
@@ -62,7 +61,7 @@
 	background: transparent !important;
 }
 
-/* Container principal com leve espaçamento e cartões brancos */
+
 .container {
 	--bs-gutter-x: 1rem;
 }
@@ -72,7 +71,7 @@
 	background: transparent;
 }
 
-/* Tabelas e cards na lista com fundo branco e sombra sutil */
+
 .page-lista table,
 .page-lista .alert,
 .page-lista .card {
@@ -85,12 +84,12 @@
 	box-shadow: 0 6px 18px rgba(12, 22, 46, 0.04);
 }
 
-/* Ajustes de tipografia */
+
 h1, h2, h3 {
 	color: var(--text);
 }
 
-/* Responsividade: garantir que o botão e marcação não quebrem em telas pequenas */
+
 @media (max-width: 576px) {
 	.page-index .navbar-brand.position-absolute {
 		position: static;
@@ -105,10 +104,10 @@ h1, h2, h3 {
 	.page-index .nav-actions .btn { width: 48%; }
 }
 
-/* Pequenas melhorias visuais gerais */
+
 img[alt="Logo"]{ border-radius:8px; box-shadow: 0 6px 18px rgba(12,22,46,0.06); }
 
-/* Estilo específico: deixar o formulário de cadastro mais arredondado */
+
 .page-lista form.shadow.p-4.rounded.bg-white {
 	border-radius: 18px !important;
 	padding: 1.5rem !important;
@@ -125,7 +124,7 @@ img[alt="Logo"]{ border-radius:8px; box-shadow: 0 6px 18px rgba(12,22,46,0.06); 
 	border-radius: 10px;
 }
 
-/* Garantir que o botão de submit e o botão voltar fiquem visuais consistentes */
+
 .page-lista .btn-success {
 	background-color: var(--accent) !important;
 	border-color: var(--accent) !important;
@@ -135,4 +134,5 @@ img[alt="Logo"]{ border-radius:8px; box-shadow: 0 6px 18px rgba(12,22,46,0.06); 
 .page-lista .btn-secondary {
 	border-radius: 10px;
 }
+
 
