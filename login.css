@@ -1,0 +1,85 @@
+:root{
+  --bg-1: #f7fbff; /* fundo principal */
+  --bg-2: #eef7ff; /* gradiente */
+  --card: #ffffff; /* cards */
+  --accent: #3b82f6; /* azul acentuado */
+  --muted: #6b7280; /* texto secundário */
+  --text: #0f172a; /* texto principal */
+}
+
+/* página limpa e arejada */
+html,body{
+  height:100%;
+}
+body{
+  margin:0;
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  background: linear-gradient(135deg,var(--bg-1) 0%, var(--bg-2) 100%);
+  color:var(--text);
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+
+/* container principal do formulário (seu .global) */
+.global{
+  max-width:420px;
+  margin:8vh auto;
+  /* deixar o fundo interno igual à barra superior da index (amarelo suave) */
+  background: rgb(245, 225, 136);
+  border-radius:14px;
+  padding:32px;
+  box-shadow:0 10px 30px rgba(15,23,42,0.06);
+  border:1px solid rgba(15,23,42,0.04);
+}
+
+.global h1, .global h2{ margin:0 0 1rem 0; font-weight:600; text-align:center; }
+
+.global form{ display:block; }
+
+label{ display:block; font-size:0.95rem; color:var(--muted); margin-bottom:0.35rem; }
+
+input[type='text'], input[type='password']{
+  width:100%;
+  padding:0.75rem 0.9rem;
+  margin-bottom:1rem;
+  border-radius:10px;
+  border:1px solid rgba(15,23,42,0.08);
+  background: #fff;
+  color:var(--text);
+  box-sizing:border-box;
+  transition:box-shadow .15s ease, border-color .15s ease;
+}
+
+input[type='text']:focus, input[type='password']:focus{
+  outline:none;
+  border-color: rgba(59,130,246,0.5);
+  box-shadow: 0 6px 18px rgba(59,130,246,0.08);
+}
+
+input[type='submit']{
+  appearance:none;
+  -webkit-appearance:none;
+  width:100%;
+  padding:0.75rem;
+  border-radius:10px;
+  border:0;
+  background:var(--accent);
+  color:#fff;
+  font-weight:600;
+  cursor:pointer;
+  transition:filter .12s ease, transform .06s ease;
+}
+
+input[type='submit']:hover{ filter:brightness(.95); }
+input[type='submit']:active{ transform:translateY(1px); }
+
+.small{ font-size:0.85rem; color:var(--muted); margin-top:0.75rem; text-align:center; }
+
+/* responsividade */
+@media (max-width:520px){
+  .global{ width:92%; padding:20px; margin-top:6vh; }
+  input[type='text'], input[type='password']{ padding:0.68rem; }
+}
+
+/* utilitários */
+.center{ text-align:center; }
