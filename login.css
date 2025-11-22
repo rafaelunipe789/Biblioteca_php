@@ -1,13 +1,13 @@
 :root{
-  --bg-1: #f7fbff; /* fundo principal */
-  --bg-2: #eef7ff; /* gradiente */
-  --card: #ffffff; /* cards */
-  --accent: #3b82f6; /* azul acentuado */
-  --muted: #6b7280; /* texto secundário */
-  --text: #0f172a; /* texto principal */
+  --bg-1: #f7fbff; 
+  --bg-2: #eef7ff; 
+  --card: #ffffff; 
+  --accent: #3b82f6; 
+  --muted: #6b7280; 
+  --text: #0f172a;
 }
 
-/* página limpa e arejada */
+
 html,body{
   height:100%;
 }
@@ -20,11 +20,10 @@ body{
   -moz-osx-font-smoothing:grayscale;
 }
 
-/* container principal do formulário (seu .global) */
+
 .global{
   max-width:420px;
   margin:8vh auto;
-  /* deixar o fundo interno igual à barra superior da index (amarelo suave) */
   background: rgb(245, 225, 136);
   border-radius:14px;
   padding:32px;
@@ -75,11 +74,12 @@ input[type='submit']:active{ transform:translateY(1px); }
 
 .small{ font-size:0.85rem; color:var(--muted); margin-top:0.75rem; text-align:center; }
 
-/* responsividade */
+
 @media (max-width:520px){
   .global{ width:92%; padding:20px; margin-top:6vh; }
   input[type='text'], input[type='password']{ padding:0.68rem; }
 }
 
-/* utilitários */
+
 .center{ text-align:center; }
+
