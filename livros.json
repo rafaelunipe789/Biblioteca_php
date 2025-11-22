@@ -1,0 +1,44 @@
+[
+    {
+        "titulo": "Morte no Nilo ",
+        "autor": "Agatha Christie",
+        "ano": "1937",
+        "genero": "Romance",
+        "avaliacao": 8.9
+    },
+    {
+        "titulo": "Mentirosos ",
+        "autor": "E. Lockhart",
+        "ano": "2014",
+        "genero": "Ficção",
+        "avaliacao": 7.1
+    },
+    {
+        "titulo": "Frankenstein ",
+        "autor": "Mary Shelley",
+        "ano": "1818",
+        "genero": "Romance",
+        "avaliacao": 9.8
+    },
+    {
+        "titulo": " Violeta",
+        "autor": "Isabel Allende",
+        "ano": "2022",
+        "genero": "Ficção histórica",
+        "avaliacao": 4.5
+    },
+    {
+        "titulo": "A última festa",
+        "autor": "Lucy Foley",
+        "ano": "2020",
+        "genero": "Suspense e Mistério",
+        "avaliacao": 4
+    },
+    {
+        "titulo": "Coraline",
+        "autor": "Neil Gaiman",
+        "ano": "2002",
+        "genero": "Fantasia e Terror",
+        "avaliacao": 4.9
+    }
+]
